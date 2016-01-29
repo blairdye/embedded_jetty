@@ -7,16 +7,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
-import java.net.URLEncoder;
-import java.util.Enumeration;
-import java.util.Map;
 import java.util.Properties;
 
 import javax.net.ssl.HttpsURLConnection;
 
-import org.apache.commons.codec.binary.Base64;
 import org.apache.log4j.Logger;
-import org.opensaml.DefaultBootstrap;
 
 public class SubmitToServletApp {
 	private static final Logger logger = Logger.getLogger(SubmitToServletApp.class);

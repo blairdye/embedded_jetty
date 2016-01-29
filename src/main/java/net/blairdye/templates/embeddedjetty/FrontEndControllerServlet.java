@@ -11,7 +11,6 @@ import javax.xml.transform.TransformerException;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
-import org.opensaml.xml.ConfigurationException;
 
 public class FrontEndControllerServlet extends HttpServlet {
 	private static final Logger logger = Logger.getLogger(FrontEndControllerServlet.class);
@@ -33,7 +32,7 @@ public class FrontEndControllerServlet extends HttpServlet {
 		}
 	}
 
-	private void doIt(final HttpServletRequest req, final HttpServletResponse resp) throws ConfigurationException, TransformerException,
+	private void doIt(final HttpServletRequest req, final HttpServletResponse resp) throws TransformerException,
 			ServletException,IOException {
 		if(StringUtils.isNotBlank(req.getParameter("show"))){
 			req.getRequestDispatcher("/jsp/basicresponse.jsp").forward(req, resp);
