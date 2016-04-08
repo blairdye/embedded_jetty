@@ -1,5 +1,4 @@
-<%@page import="org.apache.commons.lang.StringUtils"%>
-<%@page import="java.util.Map"%>
+
 <html>
 	<body>
 		<h1>Demo</h1>
